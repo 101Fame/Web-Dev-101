@@ -1,0 +1,54 @@
+
+L3 Tail wind
+
+https://css-tricks.com/reboot-resets-reasoning/
+
+https://tailwindcss.com/docs/installation
+
+https://stackoverflow.com/questions/62688037/can-use-both-tailwind-css-and-bootstrap-4-at-the-same-time
+
+Using Tailwind via CDN
+
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+#For making most of Tailwind
+
+npm install tailwindcss
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+
+forEach
+
+let sum = 0;
+
+[10, 20, 30, 40, 50].forEach((value, index) => {
+    sum += index;
+});
+
+console.log(sum)
+
+Nested 
+
+let arr = [[0,1,2,3],[4,5,6],[7,8,9]]
+let sum = 0
+arr.forEach((item,i)=>item.forEach((item,index)=>sum+=i))
+console.log(sum)
+
+Map
+let arr = ["hi","SD"];
+let reverse = s => s.split("").reverse().join("");
+arr.map(reverse);
+
+
+console.log([1,2,3,4,5].map((item)=>{
+    let x = item * item;
+    let y = item + item;
+    return (2*x)/y;
+}).length)
+
+Index #Application
+
+let arr = ["idle","game"];
+let actions = (item,index)=>"/assets/images/"+index+"-"+item+".png";
+let result =arr.map(actions);
+console.log(result);
+
